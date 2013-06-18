@@ -1,0 +1,21 @@
+[submodule "home/.oh-my-zsh"]
+	path = home/.oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.vim/bundle/vim-pathogen"]
+	path = home/.vim/bundle/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "home/.vim/bundle/ctrlp.vim"]
+	path = home/.vim/bundle/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "home/.vim/bundle/dash.vim"]
+	path = home/.vim/bundle/dash.vim
+	url = git://github.com/rizzatti/dash.vim.git
+[submodule "home/.vim/bundle/funcoo.vim"]
+	path = home/.vim/bundle/funcoo.vim
+	url = git://github.com/rizzatti/funcoo.vim.git
+[submodule "home/.vim/bundle/vim-powerline"]
+	path = home/.vim/bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "home/.vim/bundle/vim-sensible"]
+	path = home/.vim/bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
