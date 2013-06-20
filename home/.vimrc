@@ -38,6 +38,12 @@ set mouse=a                     " enable using the mouse if terminal emulator
 set formatoptions+=1            " When wrapping paragraphs, don't end lines
                                 "    with 1-letter words (looks stupid)
 
+" Ignore the shift key for super common commands
+command W w
+command Wq wq
+command WQ wq
+command Q q
+
 " Toggle show/hide invisible chars
 nnoremap <leader>i :set list!<cr>
 
