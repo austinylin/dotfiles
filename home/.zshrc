@@ -53,6 +53,9 @@ if [ -f ~/.zsh/aliases ]; then
     source ~/.zsh/aliases
 fi
 
+# vim
+export EDITOR=vim
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
