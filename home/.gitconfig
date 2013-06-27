@@ -4,6 +4,6 @@
 [github]
 	user = austinylin
 [push]
-	default = matching
+	default = current
 [core]
 	excludesfile = ~/.gitignore_global
