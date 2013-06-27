@@ -99,3 +99,6 @@ export EDITOR=vim
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# local binaries
+export PATH="$HOME/local/bin:$PATH"
