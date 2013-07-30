@@ -59,3 +59,13 @@ nnoremap / /\v
 vnoremap / /\v
 
 
+" Source a vimrc from git project root
+" h/t https://gist.github.com/leif81/4617337
+let project_root = system("git rev-parse --show-toplevel")
+" System commands seem to have a trailing newline, so lets get rid of that
+let chomped_project_root = project_root[:-2]
+let project_vimrc = chomped_project_root."/.vimrc"
+if filereadable(project_vimrc)
+  execute "source" project_vimrc
+endif
+
