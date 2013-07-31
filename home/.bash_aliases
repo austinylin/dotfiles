@@ -19,7 +19,7 @@ function find_git_branch {
 
 PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
 
-PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\e[1;36m\]\$git_branch\[\033[00m\]\$ "
+PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\e[1;36m\]\$git_branch\[\033[00m\]\n\$ "
 
 # some more ls aliases
 alias ll='ls -alF'
