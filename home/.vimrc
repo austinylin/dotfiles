@@ -58,4 +58,5 @@ nnoremap <leader>p :set paste!<cr>
 nnoremap / /\v
 vnoremap / /\v
 
+set colorcolumn=80
 
