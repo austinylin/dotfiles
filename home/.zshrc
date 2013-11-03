@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 if [ -f ~/.zsh/aliases ]; then
-    source ~/.zsh/aliases
+  source ~/.zsh/aliases
 fi
 
 # vim
@@ -62,3 +62,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # local binaries
 export PATH="$HOME/local/bin:$PATH"
+
+if [ -f ~/.zsh/local ]; then
+  source ~/.zsh/local
+fi
+
