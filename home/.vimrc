@@ -58,5 +58,7 @@ nnoremap <leader>p :set paste!<cr>
 nnoremap / /\v
 vnoremap / /\v
 
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
 set colorcolumn=80
 
