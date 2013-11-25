@@ -2,6 +2,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+colorscheme solarized
 
 " Based on: https://github.com/nvie/vimrc/blob/master/vimrc
 set showmode                    " always show what mode we're currently editing in
