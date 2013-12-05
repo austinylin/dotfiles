@@ -61,5 +61,7 @@ vnoremap / /\v
 
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+noremap <C-n> :NERDTreeToggle<CR>
+
 set colorcolumn=80
 
