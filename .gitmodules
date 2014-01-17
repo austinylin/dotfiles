@@ -55,3 +55,6 @@
 [submodule "home/.vim/bundle/nerdtree"]
 	path = home/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "home/.vim/bundle/vim-spellcheck"]
+	path = home/.vim/bundle/vim-spellcheck
+	url = https://github.com/vim-scripts/spellcheck.vim.git
