@@ -67,3 +67,5 @@ set colorcolumn=80
 
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
+
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
