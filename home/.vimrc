@@ -65,3 +65,5 @@ noremap <C-n> :NERDTreeToggle<CR>
 
 set colorcolumn=80
 
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
