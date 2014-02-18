@@ -58,3 +58,6 @@
 [submodule "home/.vim/bundle/vim-spellcheck"]
 	path = home/.vim/bundle/vim-spellcheck
 	url = https://github.com/vim-scripts/spellcheck.vim.git
+[submodule "home/.vim/bundle/vim-cucumber"]
+	path = home/.vim/bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber
