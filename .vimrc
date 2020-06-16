@@ -1,8 +1,16 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
+
 syntax on
 filetype plugin indent on
-colorscheme solarized
 
 " Based on: https://github.com/nvie/vimrc/blob/master/vimrc
 set showmode                    " always show what mode we're currently editing in
@@ -38,6 +46,7 @@ set mouse=a                     " enable using the mouse if terminal emulator
                                 "    supports it (xterm does)
 set formatoptions+=1            " When wrapping paragraphs, don't end lines
                                 "    with 1-letter words (looks stupid)
+set belloff=all                 " Disable bells
 
 " Ignore the shift key for super common commands
 command W w
@@ -62,9 +71,7 @@ vnoremap / /\v
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 noremap <C-n> :NERDTreeToggle<CR>
-
-set colorcolumn=80
-
+noremap <C-p> :Files<CR>
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 
