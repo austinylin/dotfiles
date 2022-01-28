@@ -1,10 +1,10 @@
 [user]
   name = Austin Lin
-	email = austinylin@gmail.com
+  email = austinylin@gmail.com
 [github]
-	user = austinylin
+  user = austinylin
 [push]
-	default = current
+  default = current
 [core]
   excludesfile = ~/.gitignore_global
 [alias]
