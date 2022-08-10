@@ -1,3 +1,4 @@
-vim
 tmux
+vim
 silversearcher-ag
+xclip
