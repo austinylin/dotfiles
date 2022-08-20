@@ -106,3 +106,8 @@ fi
 
 # Set FZF default command so that hidden files are included.
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
+
+if [ -d /usr/local/go/bin ]; then
+    export PATH=$PATH:/usr/local/go/bin
+fi
+
