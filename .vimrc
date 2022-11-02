@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
@@ -50,6 +51,7 @@ set formatoptions+=1            " When wrapping paragraphs, don't end lines
                                 "    with 1-letter words (looks stupid)
 set belloff=all                 " Disable bells
 
+set laststatus=2
 " Ignore the shift key for super common commands
 command W w
 command Wq wq
