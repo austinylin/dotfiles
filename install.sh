@@ -25,5 +25,6 @@ linkdotfile .gitignore_global
 linkdotfile .tmux.conf
 linkdotfile .vimrc
 linkdotfile .bashrc
+linkdotfile .bash_profile
 linkdotfile .bash_aliases
 linkdotfile .gemrc  
