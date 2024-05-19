@@ -108,15 +108,14 @@ fi
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
 
 declare -a pathCandidates=(
-  "/usr/local/go/bin"
-  "~/go/bin"
-  "~/.fly/bin"
-  "~/.cargo/bin"
+  /usr/local/go/bin
+  ~/go/bin
+  ~/.fly/bin
+  ~/.cargo/bin
 )
-for i in "${arr[@]}"
+for i in "${pathCandidates[@]}"
 do
-  if [ -d $i ]; then
-      export PATH=$i:$PATH
+  if [[ -d $i ]]; then
+    export PATH="$i:$PATH"
   fi
 done
-
