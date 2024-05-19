@@ -107,10 +107,16 @@ fi
 # Set FZF default command so that hidden files are included.
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
 
-if [ -d /usr/local/go/bin ]; then
-    export PATH=$PATH:/usr/local/go/bin
-fi
+declare -a pathCandidates=(
+  "/usr/local/go/bin"
+  "~/go/bin"
+  "~/.fly/bin"
+  "~/.cargo/bin"
+)
+for i in "${arr[@]}"
+do
+  if [ -d $i ]; then
+      export PATH=$i:$PATH
+  fi
+done
 
-if [ -d ~/go/bin ]; then
-    export PATH=$PATH:~/go/bin
-fi
