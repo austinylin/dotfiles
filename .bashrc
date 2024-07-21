@@ -109,9 +109,11 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
 
 declare -a pathCandidates=(
   /usr/local/go/bin
+  ~/tools
   ~/go/bin
   ~/.fly/bin
   ~/.cargo/bin
+  ~/swift/usr/bin
 )
 for i in "${pathCandidates[@]}"
 do
