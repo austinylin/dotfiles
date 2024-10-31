@@ -8,12 +8,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'nordtheme/vim'
 call plug#end()
 
 syntax on
 filetype plugin indent on
 colorscheme nord
+highlight Visual ctermfg=NONE
 
 " Based on: https://github.com/nvie/vimrc/blob/master/vimrc
 set showmode                    " always show what mode we're currently editing in

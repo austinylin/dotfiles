@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 set -e
 set -u
 
@@ -28,3 +28,10 @@ linkdotfile .bashrc
 linkdotfile .bash_profile
 linkdotfile .bash_aliases
 linkdotfile .gemrc  
+linkdotfile .zshrc
+
+
+if [[ "$(uname)" == "Darwin" ]]; then
+  linkdotfile Brewfile
+fi
+
