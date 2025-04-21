@@ -33,5 +33,7 @@ linkdotfile .zshrc
 
 if [[ "$(uname)" == "Darwin" ]]; then
   linkdotfile Brewfile
-fi
 
+  mkdir -p ~/tools
+  ln -s ~/dotfiles/fixmymac ~/tools/fixmymac
+fi

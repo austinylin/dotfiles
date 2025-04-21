@@ -9,6 +9,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
 Plug 'nordtheme/vim'
+Plug 'dense-analysis/ale'
+if executable('nix')
+  Plug 'LnL7/vim-nix'
+endif
 call plug#end()
 
 syntax on
