@@ -92,12 +92,13 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
 
 # Add directories to PATH if they exist
 pathCandidates=(
-  /usr/local/go/bin
   ~/tools
+  ~/.local/bin
   ~/go/bin
   ~/.fly/bin
   ~/.cargo/bin
   ~/swift/usr/bin
+  /usr/local/go/bin
   /opt/homebrew/bin
 )
 
