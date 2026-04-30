@@ -98,6 +98,7 @@ pathCandidates=(
   ~/.fly/bin
   ~/.cargo/bin
   ~/swift/usr/bin
+  ~/Library/Application\ Support/Coursier/bin # Scala
   /usr/local/go/bin
   /opt/homebrew/bin
 )
@@ -107,7 +108,7 @@ for dir in $pathCandidates; do
 done
 export PATH
 
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# mise if it exists
+if (( $+commands[mise] )); then
+  eval "$(mise activate zsh)"
+fi
