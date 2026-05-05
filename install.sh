@@ -27,8 +27,11 @@ linkdotfile .vimrc
 linkdotfile .bashrc
 linkdotfile .bash_profile
 linkdotfile .bash_aliases
-linkdotfile .gemrc  
+linkdotfile .gemrc
 linkdotfile .zshrc
+
+mkdir -p ~/.claude
+linkdotfile .claude/CLAUDE.md
 
 
 if [[ "$(uname)" == "Darwin" ]]; then
