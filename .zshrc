@@ -101,6 +101,7 @@ pathCandidates=(
   ~/Library/Application\ Support/Coursier/bin # Scala
   /usr/local/go/bin
   /opt/homebrew/bin
+  ~/.bun/bin
 )
 
 for dir in $pathCandidates; do
