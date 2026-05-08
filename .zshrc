@@ -20,6 +20,12 @@ SAVEHIST=2000
 # Enable recursive globbing with `**`
 setopt EXTENDED_GLOB
 
+# Supress focus events from acting as inputs. Prevents issues with tmux.
+function _ignore-focus-events() { }
+zle -N _ignore-focus-events
+bindkey '^[[I' _ignore-focus-events
+bindkey '^[[O' _ignore-focus-events
+
 # make `less` more friendly for non-text input files
 # [[ -x /usr/bin/lesspipe ]] && eval "$(SHELL=/bin/sh lesspipe)"
 
